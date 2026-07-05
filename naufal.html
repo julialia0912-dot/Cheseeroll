@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheesyRolls - Lumer di Mulut!</title>
+    <style>
+        /* Reset & Font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fffdf6;
+            color: #4a3b32;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: #ffb703;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            color: #fff3d1;
+            font-style: italic;
+            margin-top: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(255, 183, 3, 0.2), rgba(255, 253, 246, 1)), url('https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000') no-repeat center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #fb8500;
+            margin-bottom: 10px;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            position: relative;
+            color: #fb8500;
+        }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .menu-card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-img {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-weight: bold;
+            /* Kamu bisa ganti URL gambar di bawah dengan foto Cheesecake Roll milikmu */
+            background-image: url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=500');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Variasi gambar manual lewat CSS placeholder untuk contoh saja */
+        .img-coklat { background-image: url('https://images.unsplash.com/photo-1541532713592-79a0317b6b77?q=80&w=500'); }
+        .img-matcha { background-image: url('https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=500'); }
+
+        .menu-info {
+            padding: 20px;
+        }
+
+        .menu-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .menu-info p {
+            font-size: 0.95rem;
+            color: #777;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .price {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #fb8500;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        /* Button Order */
+        .btn-order {
+            display: inline-block;
+            background-color: #25d366; /* Warna WhatsApp */
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .btn-order:hover {
+            background-color: #128c7e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🧀 CheesyRolls</h1>
+        <p>Sensasi Renyah di Luar, Lumer Cheesecake di Dalam!</p>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Dibuat Fresh Setiap Hari</h2>
+        <p>Menggunakan keju premium pilihan dengan kulit yang super crispy.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title">Menu Varian Rasa</h2>
+        
+        <div class="menu-grid">
+            <!-- Kartu Menu 1 -->
+            <div class="menu-card">
+                <div class="menu-img"></div>
+                <div class="menu-info">
+                    <h3>Original Cheese Roll</h3>
+                    <p>Isian keju padat berpadu saus manis rahasia, dibalut kulit pastry renyah khas CheesyRolls.</p>
+                    <span class="price">Rp 15.000 / porsi</span>
+                    <a href="https://wa.me/628123456789?text=Halo,%20saya%20mau%20pesen%20Original%20Cheese%20Roll" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Kartu Menu 2 -->
+            <div class="menu-card">
+                <div class="menu-img img-coklat"></div>
+                <div class="menu-info">
+                    <h3>Double Chocolate Cheese</h3>
+                    <p>Perpaduan lumeran coklat Belgian premium di luar dan gurihnya cheesecake di dalam.</p>
+                    <span class="price">Rp 18.000 / porsi</span>
+                    <a href="https://wa.me/628123456789?text=Halo,%20saya%20mau%20pesen%20Chocolate%20Cheese" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- Kartu Menu 3 -->
+            <div class="menu-card">
+                <div class="menu-img img-matcha"></div>
+                <div class="menu-info">
+                    <h3>Matcha Glaze Cheese</h3>
+                    <p>Saus Matcha Jepang yang legit dikombinasikan dengan gurih asinnya premium cheesecake.</p>
+                    <span class="price">Rp 18.000 / porsi</span>
+                    <a href="https://wa.me/628123456789?text=Halo,%20saya%20mau%20pesen%20Matcha%20Cheese" target="_blank" class="btn-order">Order via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CheesyRolls Indonesia. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
